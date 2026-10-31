@@ -1,6 +1,5 @@
 from hash import *
 from time import sleep
-import os
 
 def main():
     while True:
@@ -23,15 +22,15 @@ def main():
             if Continue == '2':
                 print('\nClosing the program...')
                 sleep(1.5)
-                os.system('cls')
+
                 return
             elif Continue == '1':
-                os.system('cls')
+
                 break
             else:
-                os.system('cls')
+
                 print('\n-Error Value!')
-        os.system('cls')
+
 
 if __name__ == '__main__':
     main()

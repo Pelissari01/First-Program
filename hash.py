@@ -1,5 +1,4 @@
 from hashlib import sha256
-from rich import print
 from time import sleep
 
 class PassWord():
@@ -24,9 +23,9 @@ class PassWord():
              cod = word.encode('utf-8')
              hash = sha256(cod).hexdigest()
              self._password = hash
-             print("[green]\nValid password[/]")
+             print("\nValid password")
         else:
-            print("[red]\nInvalid password[/]")
+            print("\nInvalid password")
             self.keep = True
 
 
@@ -40,10 +39,10 @@ class PassWord():
         if self._password == self.__real_password:
             print('\nChecking...')
             sleep(2)
-            print('[green]\nWelcome![/]')
+            print('\nWelcome!')
             self.keep = True
         else:
 
             print('\nChecking...')
             sleep(2)
-            print('[red]\nPlease, write the right password[/]')
+            print('\nPlease, write the right password')
